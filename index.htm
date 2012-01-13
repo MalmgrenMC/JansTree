@@ -1,24 +1,25 @@
+<?
+    require_once('includes/header.php');
+?>
 <html>
 
 <head>
 <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
 <title>JansTree - Isaacs Genealogy and Allen Genealogy</title>
-
-<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
-</script>
-<script type="text/javascript">
-_uacct = "UA-755263-1";
-urchinTracker();
-</script>
+<?head()?>
+<style>
+    div#mainbody { margin-top: 100px; width: 50%; }
+    div#mainbody a { background: pink; text-decoration: none; color: black; font-size: 26px; }
+</style>
 </head>
 
 <body>
-<?=header_crumb(
-    ('homepage','/')
-    )?>
-<p><a href="http://janstree.com"><img src="images2/TempHeader.gif" alt="Janstree Header" width="790" height="67"></a></p>
-<p><a href="IsaacsHome.htm"><img src="images2/Isaacs.gif"><br>Isaacs</a></p>
-<p><a href="allen.html"><img src="images2/Allen.gif"><br>Allen</a></p>
-
+    <?header_page('')?>
+    <?header_crumb('', '')?>
+    <div id="mainbody">
+        <a href="/IsaacsHome.htm"><img src="images2/Isaacs.gif"><br />Isaacs</a>
+        <br />
+        <a href="/allen.html"><img src="images2/Allen.gif"><br />Allen</a>
+    </div>
 </body>
 </html>
