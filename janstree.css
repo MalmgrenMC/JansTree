@@ -1,7 +1,6 @@
 /*
-Isaacs: http://kuler.adobe.com/#themeID/160220
-new? A6A299
-? http://kuler.adobe.com/#themeID/1641683
+Isaacs: http://kuler.adobe.com/#themeID/1641683
+Allen:  http://kuler.adobe.com/#themeID/24198
 */
 
 body { font-family: helvetica, verdana, arial, sans-serif; padding: 0px; margin: 0px; background: #FFFFFF; }
@@ -15,15 +14,16 @@ ul#headermainnav { display: inline; margin: 0px; padding: 10px 0px 0px 0px; font
 ul#headermainnav a { color: #F2F2F2; text-decoration: none; height: 100%; padding: 0px 10px; line-height: 24pt; }
 ul#headermainnav li { display: inline; padding: 8px 10px 3px 10px; margin: 0px 10px; }
 ul#headermainnav li#isaacsnav.selected { border-bottom: 5px solid #FEB41C; }
-ul#headermainnav li#allennav.selected { border-bottom: 5px solid #FEB41C; }
+ul#headermainnav li#allennav.selected { border-bottom: 5px solid #FFB03B; }
 ul#headermainnav li#isaacsnav.selected a { color: #FEB41C; }
-ul#headermainnav li#allennav.selected a { color: #FEB41C; }
+ul#headermainnav li#allennav.selected a { color: #FFB03B; }
 
-ul#header_crumb { padding: 8px 0px; margin: 0px; background: url(/images/headernav_shadow.png) 0px -24px repeat-x; font-size: 14px; font-weight: bold; border-bottom: 1px solid black; }
+ul#header_crumb { padding: 8px 0px; margin: 0px 0px 20px 0px; background: url(/images/headernav_shadow.png) 0px -24px repeat-x; font-size: 14px; font-weight: bold; border-bottom: 1px solid black; }
 ul#header_crumb li { display: inline; padding: 10px; }
 ul#header_crumb li.first { background-image: none; padding-left: 0px; }
-ul#header_crumb li a { color: #F2F2F2; text-decoration: none; padding: 20px 20px 20px 20px; }
+ul#header_crumb li a { color: #F2F2F2; text-decoration: none; padding: 20px 10px 20px 10px; }
 ul#header_crumb.isaacs { background-color: #5E7C88; }
-ul#header_crumb.allen { background-color: #FEB41C; }
-ul#header_crumb li.selected a { color: #FEB41C; }
+ul#header_crumb.allen { background-color: #468966; }
+ul#header_crumb.isaacs li.selected a { color: #FEB41C; }
+ul#header_crumb.allen li.selected a { color: #FFB03B; }
 

@@ -4,10 +4,10 @@ function header_page($major) {
     ?>
         <div id="header">
             <div id="headerimg"></div>
-            <h1><a href="/">JansTree</a></h1>
+            <h1><a target="_top" href="/">JansTree</a></h1>
             <ul id="headermainnav">
                 <li id="isaacsnav" <?=('isaacs' == $major) ? 'class="selected"' : ''?>><a target="_top" href="/IsaacsHome.htm">ISAACS</a></li>
-                <li id="allennav" <?=('allen' == $major) ? 'class="selected"' : ''?>><a href="/allen.html">ALLEN</a></li>
+                <li id="allennav" <?=('allen' == $major) ? 'class="selected"' : ''?>><a target="_top" href="/AllenHome.html">ALLEN</a></li>
             </ul>
         </div>
     <?
@@ -25,23 +25,26 @@ urchinTracker();
     <?
 }
 
-function header_crumb($major, $selected) {
+function header_crumb($major, $current) {
     if ('isaacs' == $major) {
         $navoptions = array(
-            array('ISAACS', '', 'first'),
-            array('CENSUS DATA', ''),
-            array('CIVIL WAR', ''),
-            array('BIOGRAPHIES', ''),
+            array('ISAACS', '/IsaacsHome.htm', 'first'),
+            array('CENSUS DATA', '/index_census.html', ''),
+            array('CIVIL WAR', '/LinkCWIsaacs.htm'),
+            array('BIOGRAPHIES', '/LinkBiographicalsketches.htm'),
         );
     } else if ('allen' == $major) {
-        return;
+        $navoptions = array(
+            array('ALLEN', '/AllenHome.html', 'first'),
+            array('ALBUM', '/allen.html'),
+        );
     } else {
         return;
     }
     print '<ul id="header_crumb" class="'.$major.'">';
     foreach ($navoptions as $nav) {
-        $selected = ($selected == $nav[0]) ? 'selected' : '';
-        print "<li class=\"".$nav[2]." " . $selected . "\"><a href=\"" . $nav[1] . "\">".$nav[0]."</a></li>";
+        $selected = ($current == $nav[0]) ? 'selected' : '';
+        print "<li class=\"".$nav[2]." " . $selected . "\"><a target=\"_top\" href=\"" . $nav[1] . "\">".$nav[0]."</a></li>";
     }
     print '</ul>';    
 }
