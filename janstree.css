@@ -21,9 +21,11 @@ ul#headermainnav li#allennav.selected a { color: #FFB03B; }
 ul#header_crumb { padding: 8px 0px; margin: 0px 0px 20px 0px; background: url(/images/headernav_shadow.png) 0px -24px repeat-x; font-size: 14px; font-weight: bold; border-bottom: 1px solid black; }
 ul#header_crumb li { display: inline; padding: 10px; }
 ul#header_crumb li.first { background-image: none; padding-left: 0px; }
-ul#header_crumb li a { color: #F2F2F2; text-decoration: none; padding: 20px 10px 20px 10px; }
+ul#header_crumb li a { color: #F2F2F2; text-decoration: none; padding: 9px 10px 9px 10px; }
 ul#header_crumb.isaacs { background-color: #5E7C88; }
 ul#header_crumb.allen { background-color: #468966; }
 ul#header_crumb.isaacs li.selected a { color: #FEB41C; }
 ul#header_crumb.allen li.selected a { color: #FFB03B; }
 
+ul.clean li { list-style: none; }
+p { padding: 0px 5px; }
