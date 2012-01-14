@@ -9,7 +9,7 @@ div#header { display: block; background: #363F45; padding: 0px; margin: 0px; bor
 div#header h1 { display: inline; padding: 0px; margin: 0px 10px 0px 10px; font-size: 18px; font-weight: normal; }
 div#header h1 a { color: #F2F2F2; text-decoration: none; height: 100%; padding: 10px 0px; }
 div#headerimg { height: 60px; width: 80px; float: right; top: 0; background: url(/images/oaktree.png) no-repeat; top: 0; left: 0; margin: 5px; }
-/*background-position: top right; z-index: 100; */
+
 ul#headermainnav { display: inline; margin: 0px; padding: 10px 0px 0px 0px; font-size: 14px; font-weight: bold; line-height: 16pt; }
 ul#headermainnav a { color: #F2F2F2; text-decoration: none; height: 100%; padding: 0px 10px; line-height: 24pt; }
 ul#headermainnav li { display: inline; padding: 8px 10px 3px 10px; margin: 0px 10px; }

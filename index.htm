@@ -8,18 +8,21 @@
 <title>JansTree - Isaacs Genealogy and Allen Genealogy</title>
 <?head()?>
 <style>
-    div#mainbody { margin-top: 100px; width: 50%; }
-    div#mainbody a { background: pink; text-decoration: none; color: black; font-size: 26px; }
+    td a { text-decoration: none; color: #363F45; }
+    td { text-align: center; font-size: 26px; padding: 10px 30px; }
 </style>
 </head>
 
 <body>
     <?header_page('')?>
     <?header_crumb('', '')?>
-    <div id="mainbody">
-        <a href="/IsaacsHome.htm"><img src="images2/Isaacs.gif"><br />Isaacs</a>
-        <br />
-        <a href="/allen.html"><img src="images2/Allen.gif"><br />Allen</a>
-    </div>
+    <center>
+        <table>
+            <tr>
+                <td><a href="/IsaacsHome.htm"><img src="images2/Isaacs.gif"></a><br /><a href="/IsaacsHome.htm">Isaacs</a></td>
+                <td><a href="/AllenHome.html"><img src="images2/Allen.gif"></a><br /><a href="/AllenHome.html">Allen</a></td>
+            </tr>
+        </table>
+    </center>
 </body>
 </html>
