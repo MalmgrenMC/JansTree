@@ -4,10 +4,10 @@ function header_page($major) {
     ?>
         <div id="header">
             <div id="headerimg"></div>
-            <h1><a target="_top" href="/">JansTree</a></h1>
-            <ul id="headermainnav">
-                <li id="isaacsnav" <?=('isaacs' == $major) ? 'class="selected"' : ''?>><a target="_top" href="/IsaacsHome.htm">ISAACS</a></li>
-                <li id="allennav" <?=('allen' == $major) ? 'class="selected"' : ''?>><a target="_top" href="/AllenHome.html">ALLEN</a></li>
+            <ul id="headermainnav" class="menu <?=$major?>">
+                <li class="homelink""><a target="_top" href="/">JansTree</a></li>
+                <li id="isaacsnav"><a <?=('isaacs' == $major) ? 'class="selected"' : ''?> target="_top" href="/IsaacsHome.htm">ISAACS</a></li>
+                <li id="allennav"><a <?=('allen' == $major) ? 'class="selected"' : ''?> target="_top" href="/AllenHome.html">ALLEN</a></li>
             </ul>
         </div>
     <?
@@ -36,15 +36,17 @@ function header_crumb($major, $current) {
     } else if ('allen' == $major) {
         $navoptions = array(
             array('ALLEN', '/AllenHome.html', 'first'),
+            array('CIVIL REGISTRATION', '/allen/civilregistration.html'),
+            array('DOCUMENTS', '/allen/documents.html'),
             array('ALBUM', '/allen.html'),
         );
     } else {
         return;
     }
-    print '<ul id="header_crumb" class="'.$major.'">';
+    print '<ul class="menu submenu '.$major.'sub">';
     foreach ($navoptions as $nav) {
         $selected = ($current == $nav[0]) ? 'selected' : '';
-        print "<li class=\"".$nav[2]." " . $selected . "\"><a target=\"_top\" href=\"" . $nav[1] . "\">".$nav[0]."</a></li>";
+        print "<li class=\"".$nav[2]."\"><a class=\"".$selected."\" target=\"_top\" href=\"" . $nav[1] . "\">".$nav[0]."</a></li>";
     }
     print '</ul>';    
 }
