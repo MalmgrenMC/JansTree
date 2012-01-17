@@ -6,8 +6,8 @@ function header_page($major) {
             <div id="headerimg"></div>
             <ul id="headermainnav" class="menu <?=$major?>">
                 <li class="homelink""><a target="_top" href="/">JansTree</a></li>
-                <li id="isaacsnav"><a <?=('isaacs' == $major) ? 'class="selected"' : ''?> target="_top" href="/IsaacsHome.htm">ISAACS</a></li>
-                <li id="allennav"><a <?=('allen' == $major) ? 'class="selected"' : ''?> target="_top" href="/AllenHome.html">ALLEN</a></li>
+                <li id="isaacsnav"><a <?=('isaacs' == $major) ? 'class="selected"' : ''?> target="_top" href="/isaacs/">ISAACS</a></li>
+                <li id="allennav"><a <?=('allen' == $major) ? 'class="selected"' : ''?> target="_top" href="/allen/">ALLEN</a></li>
             </ul>
         </div>
     <?
@@ -28,17 +28,17 @@ urchinTracker();
 function header_crumb($major, $current) {
     if ('isaacs' == $major) {
         $navoptions = array(
-            array('ISAACS', '/IsaacsHome.htm', 'first'),
-            array('CENSUS DATA', '/index_census.html', ''),
-            array('CIVIL WAR', '/LinkCWIsaacs.htm'),
-            array('BIOGRAPHIES', '/LinkBiographicalsketches.htm'),
+            array('ISAACS', '/isaacs/', 'first'),
+            array('CENSUS DATA', '/isaacs/census/', ''),
+            array('CIVIL WAR', '/isaacs/civilwar/'),
+            array('BIOGRAPHIES', '/isaacs/biographies/'),
         );
     } else if ('allen' == $major) {
         $navoptions = array(
-            array('ALLEN', '/AllenHome.html', 'first'),
+            array('ALLEN', '/allen/', 'first'),
             array('CIVIL REGISTRATION', '/allen/civilregistration.html'),
             array('DOCUMENTS', '/allen/documents.html'),
-            array('ALBUM', '/allen.html'),
+            array('ALBUM', '/allen/album.html'),
         );
     } else {
         return;
