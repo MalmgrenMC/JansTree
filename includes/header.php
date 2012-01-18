@@ -15,13 +15,19 @@ function header_page($major) {
 
 function head() {
     ?>
-<link rel="stylesheet" type="text/css" href="/janstree.css" /> 
-<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
-</script>
-<script type="text/javascript">
-_uacct = "UA-755263-1";
-urchinTracker();
-</script>
+    <link rel="stylesheet" type="text/css" href="/janstree.css" /> 
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        _uacct = "UA-755263-1";
+        urchinTracker();
+    </script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".stripeMe tr").mouseover(function(){$(this).addClass("over");}).mouseout(function(){$(this).removeClass("over");});
+            $(".stripeMe tr:even").addClass("alt");
+        });
+    </script>
     <?
 }
 
@@ -32,12 +38,13 @@ function header_crumb($major, $current) {
             array('CENSUS DATA', '/isaacs/census/', ''),
             array('CIVIL WAR', '/isaacs/civilwar/'),
             array('BIOGRAPHIES', '/isaacs/biographies/'),
+            array('VITAL RECORDS', '/isaacs/vitalrecords/'),
         );
     } else if ('allen' == $major) {
         $navoptions = array(
             array('ALLEN', '/allen/', 'first'),
             array('CIVIL REGISTRATION', '/allen/civilregistration.html'),
-            array('DOCUMENTS', '/allen/documents.html'),
+            array('DOCUMENTS/PHOTOS', '/allen/documents.html'),
             array('ALBUM', '/allen/album.html'),
         );
     } else {
