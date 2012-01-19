@@ -43,7 +43,7 @@ function header_crumb($major, $current) {
     } else if ('allen' == $major) {
         $navoptions = array(
             array('ALLEN', '/allen/', 'first'),
-            array('CIVIL REGISTRATION', '/allen/civilregistration.html'),
+            array('CIVIL REGISTRATION', '/allen/civilregistration/'),
             array('DOCUMENTS/PHOTOS', '/allen/documents.html'),
             array('ALBUM', '/allen/album.html'),
         );
