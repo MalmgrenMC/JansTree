@@ -47,7 +47,7 @@ function header_crumb($major, $current) {
             array('CIVIL REGISTRATION', '/allen/civilregistration/'),
             array('CORRESPONDENCE', '/allen/correspondence/'),
             array('DOCUMENTS', '/allen/documents.html'),
-            array('PICTURES', '/allen/pictures/'),
+            array('PICTURES', '/allen/pictures.html'),
         );
     } else {
         return;
