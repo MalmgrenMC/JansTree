@@ -28,6 +28,7 @@ ul.clean li { list-style: none; }
 p { padding: 0px 10px; }
 h1 { padding: 2px 10px; font-size: 18px; }
 h2 { padding: 2px 10px; font-size: 16px; }
+h3 { padding: 2px 10px; font-size: 12px; }
 table.recordstable { border: 1px solid #24221F; border-collapse:collapse; margin-left: 10px; margin-bottom: 10px; }
 table.recordstable th { text-align: left; }
 table.recordstable td, table.recordstable th { border: 1px solid #24221F; padding: 5px; }
