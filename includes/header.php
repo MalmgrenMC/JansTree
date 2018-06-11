@@ -36,18 +36,18 @@ function header_crumb($major, $current) {
         $navoptions = array(
             array('ISAACS', '/isaacs/', 'first'),
             array('CENSUS DATA', '/isaacs/census/', ''),
-            array('CIVIL WAR', '/isaacs/civilwar/'),
-            array('BIOGRAPHIES', '/isaacs/biographies/'),
-            array('VITAL RECORDS', '/isaacs/vitalrecords/'),
+            array('CIVIL WAR', '/isaacs/civilwar/', ''),
+            array('BIOGRAPHIES', '/isaacs/biographies/', ''),
+            array('VITAL RECORDS', '/isaacs/vitalrecords/', ''),
         );
     } else if ('allen' == $major) {
         $navoptions = array(
             array('ALLEN', '/allen/', 'first'),
-            array('ALBUM', '/allen/album.html'),
-            array('CIVIL REGISTRATION', '/allen/civilregistration/'),
-            array('CORRESPONDENCE', '/allen/correspondence/'),
-            array('DOCUMENTS', '/allen/documents.html'),
-            array('PICTURES', '/allen/pictures.html'),
+            array('ALBUM', '/allen/album.html', ''),
+            array('CIVIL REGISTRATION', '/allen/civilregistration/', ''),
+            array('CORRESPONDENCE', '/allen/correspondence/', ''),
+            array('DOCUMENTS', '/allen/documents.html', ''),
+            array('PICTURES', '/allen/pictures.html', ''),
         );
     } else {
         return;
